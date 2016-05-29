@@ -1,0 +1,135 @@
+/** Variables **/
+$black: #0f0e14;
+$blue-dark: #3a5a80;
+$blue-light:  #96cae7; /** #e2f4fe **/
+$brown: #e8e0d3;
+$white: #fbf2e9;
+
+/**
+ * Links
+ */
+a {
+    color: $blue-dark;
+    text-decoration: none;
+    transition: color 1s;
+
+    &:hover {
+        color: $blue-light;
+    }
+}
+
+/**
+ * Site header
+ */
+.site-header {
+    min-height: 56px;
+    // Positioning context for the mobile navigation icon
+    position: relative;
+    padding: 20px 0;
+}
+
+.site-title {
+    font-size: 26px;
+    font-weight: 300;
+    line-height: 56px;
+    letter-spacing: -1px;
+    margin-bottom: 0;
+    float: left;
+    font-family: 'Bad Script', cursive;
+
+    &,
+    &:visited {
+        color: $grey-color-dark;
+    }
+}
+.home{
+  min-height: 400px;
+}
+/**
+ * Site footer
+ */
+.site-footer {
+    padding: $spacing-unit 0;
+    background-color: $white;
+    color: $blue-dark;
+    font-size: 12px;
+}
+
+/**
+ * Page content
+ */
+.page-content {
+    padding: $spacing-unit 0;
+}
+
+.page-heading {
+}
+
+.post-list {
+    margin-left: 0;
+    list-style: none;
+
+    h2{
+      margin-top: 0;
+    }
+
+    > li {
+        margin-bottom: $spacing-unit;
+    }
+}
+
+.post-meta {
+    font-size: $small-font-size;
+    color: $grey-color;
+}
+
+.post-link {
+    display: block;
+}
+
+
+
+/**
+ * Posts
+ */
+.post-header {
+    margin-bottom: $spacing-unit;
+}
+
+.post-title {
+    font-size: 42px;
+    letter-spacing: -1px;
+    line-height: 1;
+
+    @include media-query($on-laptop) {
+        font-size: 36px;
+    }
+}
+
+.post-content {
+    margin-bottom: $spacing-unit;
+
+    h2 {
+        font-size: 32px;
+
+        @include media-query($on-laptop) {
+            font-size: 28px;
+        }
+    }
+
+    h3 {
+        font-size: 26px;
+
+        @include media-query($on-laptop) {
+            font-size: 22px;
+        }
+    }
+
+    h4 {
+        font-size: 20px;
+
+        @include media-query($on-laptop) {
+            font-size: 18px;
+        }
+    }
+}
